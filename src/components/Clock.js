@@ -132,6 +132,7 @@ const Clock = () => {
 
       <div className="input-wrapper">
         <input
+          className="field"
           type="text"
           value={timeInput}
           placeholder={TIME_INPUT_PLACEHOLDER}
