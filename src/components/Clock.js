@@ -114,6 +114,7 @@ const Clock = () => {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
+        <div className="center-dot"></div>
         <div
           id={MINUTE_HAND_ID}
           style={{
