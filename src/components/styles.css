@@ -1,0 +1,44 @@
+.input-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#second-hand {
+  position: absolute;
+  background-color: #000;
+  height: 140px;
+  width: 1px;
+  transform-origin: bottom center;
+  transition-timing-function: linear;
+  transition-property: transform;
+  cursor: grab;
+}
+
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+#minute-hand {
+  position: absolute;
+  background-color: #000;
+  height: 120px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition-timing-function: linear;
+  transition-property: transform;
+  cursor: grab;
+  top: 30px;
+}
+  
+.clock-container {
+  margin-top: 50px;
+}
