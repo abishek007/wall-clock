@@ -27,6 +27,16 @@
   padding-top: 8px;
 }
 
+.clock-outer {
+  width: 320px;
+  height: 320px;
+}
+
+.clock-inner {
+  width: 300px;
+  height: 300px;
+}
+
 #minute-hand {
   position: absolute;
   background-color: #000;

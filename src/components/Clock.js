@@ -109,26 +109,28 @@ const Clock = () => {
 
   return (
     <div className="clock-container">
-      <div
-        className="clock"
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-      >
-        <div className="center-dot"></div>
+      <div className="clock clock-outer">
         <div
-          id={MINUTE_HAND_ID}
-          style={{
-            transform: `rotate(${minute * 6}deg)`,
-          }}
-          onMouseDown={handleMouseDownMinute}
-        ></div>
-        <div
-          id={SECOND_HAND_ID}
-          style={{
-            transform: `rotate(${second * 6}deg)`,
-          }}
-          onMouseDown={handleMouseDownSecond}
-        ></div>
+          className="clock clock-inner"
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
+          <div className="center-dot"></div>
+          <div
+            id={MINUTE_HAND_ID}
+            style={{
+              transform: `rotate(${minute * 6}deg)`,
+            }}
+            onMouseDown={handleMouseDownMinute}
+          ></div>
+          <div
+            id={SECOND_HAND_ID}
+            style={{
+              transform: `rotate(${second * 6}deg)`,
+            }}
+            onMouseDown={handleMouseDownSecond}
+          ></div>
+        </div>
       </div>
 
       <div className="input-wrapper">
